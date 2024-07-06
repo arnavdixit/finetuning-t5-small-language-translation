@@ -46,7 +46,6 @@ def run_training(config):
         weight_decay = 0.01,
         save_total_limit = 3,
         predict_with_generate = True,
-        use_mps_device = True
     )
     
     trainer = Seq2SeqTrainer(
