@@ -88,9 +88,9 @@ def train_model(config):
         tokenizer = tokenizer
     )
     print("Training Starting")
-    #trainer.train()
-    #results = trainer.evaluate()
-    #print(results)
+    trainer.train()
+    results = trainer.evaluate()
+    print(results)
     
 if __name__ == "__main__":
     config = get_config()
