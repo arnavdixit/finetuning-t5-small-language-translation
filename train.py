@@ -39,7 +39,7 @@ def run_training(config):
     training_args = Seq2SeqTrainingArguments(
         output_dir = config['output_dir'],
         eval_strategy = config['eval_strategy'],
-        eval_steps = config['eval_steps']
+        eval_steps = config['eval_steps'],
         learning_rate = config['lr'],
         per_device_train_batch_size = config['batch_size'],
         per_device_eval_batch_size = config['batch_size'],
